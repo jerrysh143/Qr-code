@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | QR code component</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap');
+    body {
+      margin: 0;
+      font-family: 'Outfit', sans-serif;
+    }
+    * {
+      box-sizing: border-box;
+    }
+    img {
+      max-width: 100%;
+    }
+    .container {
+      padding: 0 15px;
+    }
+    .qr-code-wrapper {
+      background: #d6e2f0;
+      height: 800px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .qr-code-wrapper .wrap {
+      width: 100%;
+      max-width: 320px;
+      margin: 0 auto;
+      background: #FFFFFF;
+      padding: 15px 15px 43px;
+      border-radius: 19px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+    .qr-code-wrapper .wrap .img-wrap {
+      margin-bottom: 23px;
+    }
+    .qr-code-wrapper .wrap .img-wrap img {
+      border-radius: 11px;
+      display: flex;
+    }
+    .qr-code-wrapper .wrap .content-wrap {
+      text-align: center;
+      max-width: 258px;
+      width: 100%;
+    }  
+    .qr-code-wrapper .wrap .content-wrap h6 {
+      font-size: 22px;
+      line-height: 28px;
+      font-weight: 700;
+      margin: 0 0 20px;
+    }
+    .qr-code-wrapper .wrap .content-wrap p {
+      color: #a6a7ad;
+      margin: 0;
+    }
+  </style>
+</head>
+<body>
+  <div class="qr-code-wrapper">
+    <div class="container">
+      <div class="row">
+        <div class="wrap">
+          <div class="img-wrap">
+            <img src="./images/image-qr-code.png" alt="qr-code">
+          </div>
+          <div class="content-wrap">
+            <h6>Improve your front-end skills by building projects</h6>
+            <p>Scan the QR code to visit Frontend Mentor and take your coding skills to the next level</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
